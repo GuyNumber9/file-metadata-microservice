@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>File Metadata Microservice</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <h1>File Metadata Microservice</h1>
+            <p>
+                Upload a file to this microservice to receive its name, mime-type, and size in bytes. (Max size: 2MB)
+            </p>
+        
+        <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+        <label for="upfile">File</label>
+        <input type="file" name="upfile" id="upfile" />
+        <input type="submit" value="Upload" />
+        </form>
+    </main>
+    </body>
+</html>
